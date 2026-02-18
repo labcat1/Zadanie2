@@ -12,7 +12,7 @@ int main(void)
         tester = 2;
         while (tester<(sqrt(possible)+1) && c != 1) {
             k = possible/tester;
-            if (((possible/tester) == (int)k) && (possible != tester)) {
+            if ((k == (int)k) && (possible != tester)) {
             c = 1;
             }
             tester++;
