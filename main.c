@@ -13,13 +13,12 @@ double pi(double limit) {
     double pi3 = pi2 + piPart(3);
     double n = 4;
     while (true) {
-        if (fabs((pi1 + pi2)/2 - (pi2 + pi3)/2) < limit){break;}
+        if (fabs((pi1 + pi2)/2 - (pi2 + pi3)/2) < limit){return (int)((pi3 + pi2)/(2*limit*10));}
         else {
             pi1 = pi2; pi2 = pi3; pi3 = pi3 + piPart(n);
             n++;
         }
     }
-    return (int)((pi3 + pi2)/(2*limit*10));
 }
 int main(void)
 {
